@@ -30,7 +30,10 @@ class category_model extends CI_Model {
         $this->db->update('link_category',$data,array('id'=>$id));
     }
     public function get_all(){
-        $query = $this->db->get('link_category');
+        
+        $query = $this->db->get_where('link_category',array(
+            'tag' => category_tags::$available
+        ));
         return $query->result();
     }
     

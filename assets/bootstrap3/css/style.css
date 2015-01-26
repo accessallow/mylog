@@ -1,0 +1,14 @@
+.parsley-required{
+    display:none;
+}
+.parsley-error{
+    border-color: #FF3333;
+    background-color: #FFCCCC;
+}
+thead{
+    font-weight: bolder;
+}
+thead tr{
+    background: #8099E6;
+    color:white;
+}
